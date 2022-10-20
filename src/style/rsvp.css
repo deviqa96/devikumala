@@ -1,0 +1,40 @@
+.cardCol{
+  padding-bottom: 20px;
+}
+
+.accountCard{
+  width: 300px;
+  margin: auto !important;
+  border-radius: 15px !important;
+}
+
+.qrIcon{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.accountNumber {
+  text-align: center;
+    letter-spacing: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.accountName{
+  margin-left: 20px;
+}
+
+.accountLogo{
+  text-align: right;
+  margin-bottom: -15px;
+}
+
+.accountLogo img{
+  height: 50px;
+}
+
+.rsvpForm{
+  max-height: 900px;
+  margin-top:20px;
+}

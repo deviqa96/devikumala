@@ -1,0 +1,14 @@
+.video{
+  margin: 40px 0px;
+  text-align: center;
+  height: 50vw;
+}
+
+.galleryImage{
+  width: auto;
+}
+
+.galleryRow{
+  margin: 10px 20px;
+  background-color: #ECD4D3;
+}

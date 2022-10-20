@@ -1,0 +1,161 @@
+/* // @light-blue :#F3F7FA;
+// @soft-pink: #ECD4D3;
+// @hard-pink: #E6A7A2;
+// @font-white: WHITE;
+// @font-dark : #0F0B0B;
+// @FONT-brown: #695A6A ; */
+@font-face {
+  font-family: AbhayaLibre;
+  src: url(fonts/AbhayaLibre.woff2);
+}
+
+@font-face {
+  font-family: Brittany;
+  src: url(fonts/BrittanySignature.woff2);
+}
+
+@font-face {
+  font-family: Butler;
+  src: url(fonts/Butler.woff2);
+}
+
+@font-face {
+  font-family: Cormorant;
+  src: url(fonts/Cormorant.woff2);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat.woff2);
+}
+
+@font-face {
+  font-family: Riverstar;
+  src: url(fonts/Riverstar.woff2);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  color: #0F0B0B;
+}
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.ant-layout{
+  height: 100%;
+}
+.ant-layout-content{
+  height  : 100%;
+  padding: 0px;
+  background-color:#F3F7FA ;
+}
+
+.fullPage{
+  height: 100%;
+  padding: 50px 0px;
+  background-image: url('images/cover.JPG');
+  opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.center{
+  text-align: center;
+  width: 100%;
+}
+.weddingOf{
+  font-family: "Cormorant" ;
+  font-size: 18px;
+}
+.charlesAndDevi{
+  font-family: "Brittany" ;
+  font-size: 36px;
+  line-height: 1em;
+}
+.bottomDiv{
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+}
+.bottomDiv button{
+  background-color: transparent;
+}
+
+#musicButton{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: fixed;
+  display: block;
+  margin: 5px;
+  bottom: 0px;
+  right: 18px;
+  z-index:1000;
+}
+
+.welcomeRow{
+  font-family: "AbhayaLibre";
+}
+
+.countdown{
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.countdownSuffix{
+  font-size: 12px;
+  margin-bottom: 0px;;
+}
+
+.welcomeDateDiv{
+  border-left: 1px solid white;
+}
+.welcomeDate{
+  font-size: 22px;
+}
+.saveTheDate {
+  font-size: 12px;
+  color: white;
+  background-color: transparent !important;
+}
+
+.protocol{
+  width: 200px;
+  margin: 40px auto;
+  font-family: 'AbhayaLibre';
+}
+.protocol p{
+  margin: 0px -60px;
+  font-size: 12px;
+}
+
+.thankyou{
+  padding-top: 100px;
+  background-size: cover;
+  height: inherit;
+}
+
+.thankyou .charlesAndDevi{
+  padding:20px;
+  margin-bottom: 0px;
+}
+
+.copyright{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #F3F7FA;
+}
+
+.bgBold{
+  background-color: #ECD4D3;
+}

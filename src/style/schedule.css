@@ -1,0 +1,81 @@
+.scheduleCard{
+  margin: 20px;
+  width: 100%;
+  text-align: center; 
+  font-family: 'AbhayaLibre';
+}
+
+.cardCol{
+  padding: 20px;
+}
+.left{
+  text-align: left;
+  padding-left: 20px;
+  align-self: flex-end;
+}
+.right{
+  text-align: right;
+  padding-right: 20px;
+  align-self: flex-end;
+}
+
+.scheduleTitle{
+  font-size: 18px;
+
+}
+
+.scheduleDate{
+  font-size: 22px;
+  border-top: 1px solid #0F0B0B;
+  border-bottom: 1px solid #0F0B0B;
+  padding: 5px;
+  margin: auto;
+}
+
+.ring{
+  text-align: center;
+  mix-blend-mode: luminosity;
+}
+.ring img{
+  height: 30vh;
+}
+
+.reception{
+  width: 100%;
+}
+.reception img{
+  height: 30vh;
+}
+
+.textBig{
+  font-family: "Cormorant" ;
+  font-size: 22px;
+  padding-right: 100px;
+  padding-top:20px;
+  color:#0F0B0B;
+}
+
+.textCurly{
+  font-family: "Brittany" ;
+  font-size: 36px;
+  line-height: 1em;
+  margin-top: -25px;
+  padding-bottom:10px;
+  margin-bottom: 0px;
+  color:#695A6A;
+}
+
+.scheduleCard img{
+  object-fit: contain;
+}
+
+.receptionImgBg {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
+}
