@@ -40,8 +40,10 @@ export default function Deck() {
   const bind = useDrag(({ args: [index], down, movement: [mx], direction: [xDir], velocity }) => {
     if (velocity > 0) setStoryIndex(index <= 0 ? 7 : index - 1)
     else setStoryIndex(index)
-    const trigger = velocity > 0.2 // If you flick hard enough it should trigger the card to fly out
-    const dir = xDir < 0 ? -1 : 1 // Direction should either point left or right
+    const trigger = velocity > 0.05 // If you flick hard enough it should trigger the card to fly out
+    console.log(xDir);
+    
+    const dir = -1// xDir < 0 ? -1 : 1 // Direction should either point left or right
     if (!down && trigger) {
       gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
     }

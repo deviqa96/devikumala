@@ -17,7 +17,7 @@ export default function Invitation() {
   const guestName = params.guestName
   const [audio] = useState(
     new Audio(
-      'https://tsinvitation.com/wp-content/uploads/2022/05/y2mate.com-Cant-Help-Falling-In-Love-Elvis-Presley-Lyrics-video-dan-terjemahan-Alexandra-Porat-Cover.mp3'
+      'song.mp3'
     )
   )
   const [playing, setPlaying] = useState(false)

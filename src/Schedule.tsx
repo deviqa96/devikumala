@@ -33,7 +33,7 @@ export default function Schedule() {
     key: brideIndex,
     from: { opacity: 0 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    leave: {  opacity: 1 },
     config: { duration: 3000 },
     onRest: (_a: any, _b: any, item: any) => {
       if (brideIndex === item) {

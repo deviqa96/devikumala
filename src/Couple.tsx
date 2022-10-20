@@ -11,13 +11,27 @@ export default function Couple() {
   const [brideIndex, setBrideIndex] = useState<any>(0)
   const brideTransitions = useTransition(brideIndex, {
     key: brideIndex,
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    from: { x: 0, opacity: 0.2 },
+    enter: { x: 0, opacity: 1 },
+    leave: { x: 0 , opacity: 1 },
     config: { duration: 3000 },
     onRest: (_a: any, _b: any, item: any) => {
       if (brideIndex === item) {
         setBrideIndex((state: any) => (state + 1) % brideSlides.length)
+      }
+    },
+    exitBeforeEnter: true,
+  })
+  const [groomIndex, setGroomIndex] = useState<any>(0)
+  const groomTransitions = useTransition(brideIndex, {
+    key: groomIndex,
+    from: { x: 0, opacity: 0.2 },
+    enter: { x: 0, opacity: 1 },
+    leave: { x: 0 , opacity: 1 },
+    config: { duration: 3000 },
+    onRest: (_a: any, _b: any, item: any) => {
+      if (groomIndex === item) {
+        setGroomIndex((state: any) => (state + 1) % groomSlides.length)
       }
     },
     exitBeforeEnter: true,
@@ -34,7 +48,7 @@ export default function Couple() {
       <Row>
         <Col className="groomImage" lg={8} md={8} sm={18} xs={18}>
           <div>
-            {brideTransitions((style,i) => (
+            {groomTransitions((style,i) => (
               <animated.div
                 className='coupleImgBg'
                 style={{
@@ -50,9 +64,9 @@ export default function Couple() {
           <p className="groom">Groom</p>
           <p className="theGroom">The</p>
         </Col>
-        <Col lg={12} md={12} sm={24} xs={24}>
+        <Col className='divGroom' lg={12} md={12} sm={24} xs={24}>
           <h4 className="nameGroom">
-            <strong>Charles</strong>
+            <strong>C H A R L E S</strong>
           </h4>
 
           <p className="detailGroom">
@@ -65,7 +79,7 @@ export default function Couple() {
       </Row>
       <Row className="hashtag">
         <Col span={24}>
-          <p>#DEVendLESslove</p>
+          <a href='https://www.instagram.com/explore/tags/devendlesslove' rel="nofollow" target="_blank">#DEVendLESslove </a>
         </Col>
       </Row>
       <Row>
@@ -88,9 +102,9 @@ export default function Couple() {
             ))}
           </div>
         </Col>
-        <Col lg={12} md={12} sm={24} xs={24}>
+        <Col className='divBride'  lg={12} md={12} sm={24} xs={24}>
           <h4 className="nameBride">
-            <strong>Devi</strong>
+            <strong>D E V I</strong>
           </h4>
 
           <p className="detailBride">

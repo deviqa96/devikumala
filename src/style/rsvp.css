@@ -32,9 +32,10 @@
 
 .accountLogo img{
   height: 50px;
+  width: 70px;
 }
 
 .rsvpForm{
-  max-height: 900px;
+  max-height: 1000px;
   margin-top:20px;
 }

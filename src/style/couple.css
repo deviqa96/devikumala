@@ -2,14 +2,14 @@
   margin-top: 30px;
   width: 100%;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 14px;
   padding: 20px;
 }
 
 .groom{
   -webkit-transform: rotate(-90deg);
   position: absolute;
-  bottom: 20vh;
+  bottom: 125px;
   margin-bottom: 0px;
   font-size: 40px;
   width: 100%;
@@ -34,8 +34,13 @@
   padding : 20px;
 }
 
+.divGroom{
+  align-self: end;
+}
+
 .nameGroom{
-  font-family: "Brittany";
+  font-family: "Montserrat";
+  color: #695A6A;
   text-align: left;
   margin-left: 20px ;
   font-size:22px ;
@@ -44,13 +49,18 @@
 .detailGroom{
   text-align: left;
   margin-left: 20px ;
-  font-size: 12px;
+  font-size: 14px;
 }
+
+.divBride{
+  align-self: end;
+}
+
 
 .bride{
   -webkit-transform: rotate(-90deg);
   position: absolute;
-  bottom: 20vh;
+  bottom: 125px;
   margin-bottom: 0px;
   font-size: 40px;
   width: 100%;
@@ -76,7 +86,8 @@
 }
 
 .nameBride{
-  font-family: "Brittany";
+  font-family: "Montserrat";
+  color: #695A6A;
   text-align: right;
   margin-right: 20px ;
   font-size:22px ;
@@ -85,22 +96,23 @@
 .detailBride{
   text-align: right;
   margin-right: 20px ;
-  font-size: 12px;
+  font-size: 14px;
   
 }
 
 .hashtag{
   background-color: #ECD4D3;
-  color: #0F0B0B;
   font-family: "Montserrat";
   font-size: 18px;
   text-align: center;
   width: 100%;
   margin: 20px auto;
+  padding : 20px;
 }
 
-.hashtag p{
+.hashtag a{
   margin: 20px auto;
+  color: #0F0B0B !important;
 }
 
 .coupleImgBg {

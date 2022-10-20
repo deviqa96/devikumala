@@ -27,22 +27,22 @@ export default function Welcome() {
   }, 100)
 
   const { numberDays } = useSpring<any>({
-    from: { numberDays: 0 },
+    from: { numberDays: days > 10 ? days-10 : 0 },
     numberDays: days,
     config: { duration: 1000 },
   })
   const { numberHours } = useSpring<any>({
-    from: { numberHours: 0 },
+    from: { numberHours: hours > 10 ? hours-10 : 0 },
     numberHours: hours,
     config: { duration: 1000 },
   })
   const { numberMinutes } = useSpring<any>({
-    from: { numberMinutes: 0 },
+    from: { numberMinutes: minutes > 10 ? minutes-10 : 0 },
     numberMinutes: minutes,
     config: { duration: 1000 },
   })
   const { numberSeconds } = useSpring<any>({
-    from: { numberSeconds: 0 },
+    from: { numberSeconds: seconds > 10 ? seconds-10 : 0 },
     numberSeconds: seconds,
     config: { duration: 1000 },
   })
@@ -60,7 +60,7 @@ export default function Welcome() {
     config: { duration: 1000 },
   })
   const { numberYear } = useSpring<any>({
-    from: { numberYear: 0 },
+    from: { numberYear: 13 },
     numberYear: 23,
     delay: 100,
     config: { duration: 1000 },
@@ -119,7 +119,7 @@ export default function Welcome() {
                   <animated.span>{numberYear.to((n: any) => n.toFixed(0))}</animated.span>
                 </p>
               </Col>
-              <Col lg={12} md={12} sm={24} xs={24}>
+              <Col style={window.innerWidth >= 600 ? {textAlign : 'left'}  : {}} lg={12} md={12} sm={24} xs={24}>
                 <Button
                   className="saveTheDate"
                   style={{color:'white'}} 

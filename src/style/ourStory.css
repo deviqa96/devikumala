@@ -8,7 +8,7 @@
     auto;
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 600px;
   justify-content: center;
   padding: 50px 0px;
 }
@@ -31,7 +31,7 @@
   width: 100%;
   max-width: 240px;
   height: 200%;
-  max-height: 360px;
+  max-height: 500px;
   will-change: transform;
   border-radius: 10px;
   box-shadow: 0 12.5px 30px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
@@ -39,5 +39,5 @@
 
 .storyDetail{
   position: relative;
-  top : -200px;
+  top : -220px;
 }
