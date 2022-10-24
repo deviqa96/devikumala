@@ -5,6 +5,7 @@
   "dependencies": {
     "@react-spring/web": "*",
     "antd": "^4.23.1",
+    "firebase": "^9.12.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.4.0",

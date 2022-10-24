@@ -26,7 +26,7 @@ export default function Gallery() {
         <iframe
           width="90%"
           height="100%"
-          src="http://www.youtube.com/embed/GRonxog5mbw?autoplay=1&loop=1&playlist=GRonxog5mbw"
+          src="https://www.youtube.com/embed/GRonxog5mbw?autoplay=1&loop=1&playlist=GRonxog5mbw"
           frameBorder="0"
           allowFullScreen></iframe>
       </div>

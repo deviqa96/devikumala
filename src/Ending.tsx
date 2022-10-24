@@ -8,7 +8,7 @@ export default function Ending() {
       <div className="protocol center">
         <h2>Health Protocol</h2>
         <p>It’s important to us that everyone stays safe, please follow Covid-19 Health Protocol on the Wedding day.</p>
-        <Image src="protocol.png" />
+        <Image preview={false} src="protocol.png" />
       </div>
 
       

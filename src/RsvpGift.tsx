@@ -6,16 +6,10 @@ require('./style/rsvp.css')
 
 export default function RsvpGift() {
 
-  const [height, setHeight] = useState(window.innerWidth < 600 ? '860px' : '1000px')
-  console.log(height)
+  const [height] = useState(window.innerWidth < 600 ? '860px' : '1000px')
 
   function copy(copyText: string) {
     return copyText
-  }
-  function resizeIframe(obj: any) {
-    console.log(obj)
-
-    setHeight(obj.contentWindow.document.documentElement.scrollHeight + 'px')
   }
 
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -90,7 +84,6 @@ export default function RsvpGift() {
           height={height}
           frameBorder={0}
           scrolling={'no'}
-          onLoad={resizeIframe}
           marginHeight={0}
           marginWidth={0}></iframe>
       </Row>

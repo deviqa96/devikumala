@@ -38,6 +38,7 @@
 }
 .ring img{
   height: 30vh;
+  transform: scale(0.75,0.75);
 }
 
 .reception{
@@ -78,4 +79,5 @@
   background-size: cover;
   background-position: center;
   will-change: opacity;
+  border-radius: 5px;
 }

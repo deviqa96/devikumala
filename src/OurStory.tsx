@@ -4,7 +4,7 @@ import { useDrag } from 'react-use-gesture'
 
 require('./style/ourStory.css')
 
-const cards = ['story-6.JPG', 'story-6.JPG', 'story-5.JPG', 'story-4.JPG', 'story-3.JPG', 'story-2.jpeg','story-1a.jpeg', 'story-1.JPG']
+const cards = ['story-6.jpg', 'story-6.jpg', 'story-5.jpg', 'story-4.jpg', 'story-3.jpg', 'story-2.jpeg','story-1a.jpeg', 'story-1.jpg']
 const story = [
   '2022 December 4, Engagement day',
   '2022 April 15, Prewedding photoshoot',
@@ -41,9 +41,7 @@ export default function Deck() {
     if (velocity > 0) setStoryIndex(index <= 0 ? 7 : index - 1)
     else setStoryIndex(index)
     const trigger = velocity > 0.05 // If you flick hard enough it should trigger the card to fly out
-    console.log(xDir);
-    
-    const dir = -1// xDir < 0 ? -1 : 1 // Direction should either point left or right
+    const dir = xDir < 0 ? -1 : -1 // Direction should either point left or right
     if (!down && trigger) {
       gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
     }
