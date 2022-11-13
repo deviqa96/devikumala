@@ -1,6 +1,6 @@
 import React, { Fragment,  useState } from 'react'
-import { Row, Col, Button, Image, Tooltip, Card, Modal } from 'antd'
-import { CopyOutlined, QrcodeOutlined } from '@ant-design/icons'
+import { Row, Col, Button, Image, Tooltip, Card, } from 'antd'
+import { CopyOutlined } from '@ant-design/icons'
 
 require('./style/rsvp.css')
 
@@ -12,23 +12,8 @@ export default function RsvpGift() {
     return copyText
   }
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [qrImage, setQrImage] = useState('')
-
-  const showModal = (img: any) => {
-    setQrImage(img)
-    setIsModalOpen(true)
-  }
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <Fragment>
-      <Modal title="BCA QR Code" open={isModalOpen} footer={null} onCancel={handleCancel} style={{margin: 'auto', textAlign : 'center'}}>
-        <Image preview={false} height="400px"  src={qrImage} />
-      </Modal>
-
       <div className="center">
         <p className="textBig">Wedding</p>
         <p className="textCurly">Gift </p>
@@ -45,9 +30,6 @@ export default function RsvpGift() {
                 src="https://www.bca.co.id/-/media/Feature/Card/List-Card/Tentang-BCA/Brand-Assets/Logo-BCA/Logo-BCA_Biru.png"
               />
             </p>
-
-            <QrcodeOutlined className="qrIcon" onClick={() => showModal('images/BCAQR-MBCA-CHARLES.jpg')} />
-
             <div className="accountNumber">
               0692290559{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">
@@ -66,7 +48,6 @@ export default function RsvpGift() {
                 src="https://www.bca.co.id/-/media/Feature/Card/List-Card/Tentang-BCA/Brand-Assets/Logo-BCA/Logo-BCA_Biru.png"
               />
             </p>
-            <QrcodeOutlined className="qrIcon" onClick={() => showModal('images/BCAQR-MBCA-DEVI.jpg')} />
             <div className="accountNumber">
               5271364114{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">

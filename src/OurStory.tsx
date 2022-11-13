@@ -6,14 +6,14 @@ require('./style/ourStory.css')
 
 const cards = ['story-6.jpg', 'story-6.jpg', 'story-5.jpg', 'story-4.jpg', 'story-3.jpg', 'story-2.jpeg','story-1a.jpeg', 'story-1.jpg']
 const story = [
-  '2022 December 4, Engagement day',
-  '2022 April 15, Prewedding photoshoot',
-  '2022 March 13, Proposal',
-  'Anniversary day celebration',
-  "2018 August 1, Devi's Graduation",
-  "2017 August 4, Charles' Graduation",
-  '2017 February 14, First valentine date',
-  '2016 December 6, First date',
+  '4th December 2022, Engagement day',
+  '15th April 2022, Prewedding photoshoot',
+  '13th March 2022, Proposal',
+  '6th December 2019, Anniversary day celebration',
+  "1st August 2018, Devi's Graduation",
+  "4th August 2017, Charles's Graduation",
+  '14th February 2017, First valentine date',
+  '6th December 2016, First date',
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css

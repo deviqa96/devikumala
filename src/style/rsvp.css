@@ -3,7 +3,8 @@
 }
 
 .accountCard{
-  width: 300px;
+  width: inherit;
+  max-width: 300px;
   margin: auto !important;
   border-radius: 15px !important;
 }

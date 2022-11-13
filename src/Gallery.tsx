@@ -1,5 +1,6 @@
 import { Col, Image, Row } from 'antd'
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
+import {useWindowSize} from './Util'
 require('./style/gallery.css')
 
 export default function Gallery() {
@@ -15,6 +16,18 @@ export default function Gallery() {
     )
   })
 
+  const size = useWindowSize();
+  const [width, setWidth] = useState("320");
+  const [height, setHeight] = useState("180");
+  
+  useEffect(()=>{
+    console.log(size);
+    
+    setWidth(size.width <= 640 ? "320" : "640");
+    setHeight(size.width <= 640 ? "180" : "360");
+  },[size])
+
+
   return (
     <Fragment>
       <div className="center">
@@ -23,12 +36,15 @@ export default function Gallery() {
       </div>
       {/* Video */}
       <div className="video">
-        <iframe
+        {/* <iframe
           width="90%"
           height="100%"
           src="https://www.youtube.com/embed/GRonxog5mbw?autoplay=1&loop=1&playlist=GRonxog5mbw"
           frameBorder="0"
-          allowFullScreen></iframe>
+          allowFullScreen></iframe> */}
+        <video width={width} height={height} autoPlay controls>
+          <source src="PW Charles & Devi.mp4" type="video/mp4"></source>
+        </video>
       </div>
       {/* Photos */}
       <Row className="galleryRow">

@@ -14,7 +14,7 @@ import { useSpring, animated } from '@react-spring/web'
 
 export default function Invitation() {
   const params = useParams()
-  const guestName = params.guestName
+  const guestName = params.guestName || 'Guest'
   const [audio] = useState(
     new Audio(
       'song.mp3'
