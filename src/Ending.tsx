@@ -13,7 +13,7 @@ export default function Ending() {
 
       
       {/* Thank you */}
-      <div className="thankyou center" style={{backgroundImage: "url('images/thankyou.JPG')"}}>
+      <div className="thankyou center" style={{backgroundImage: "url(https://drive.google.com/uc?export=view&id=1SSGYjD-njiVGsAb1FaKgIECR6TXkbvyY)"}}>
         <h2 className="charlesAndDevi">Thank You</h2>
       </div>
       {/* Copyright */}

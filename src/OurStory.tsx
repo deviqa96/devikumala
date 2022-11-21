@@ -4,7 +4,7 @@ import { useDrag } from 'react-use-gesture'
 
 require('./style/ourStory.css')
 
-const cards = ['story-6.jpg', 'story-6.jpg', 'story-5.jpg', 'story-4.jpg', 'story-3.jpg', 'story-2.jpeg','story-1a.jpeg', 'story-1.jpg']
+const cards = ['1OrDygQzqzLHwpSMckwM7ji6ft_fshz9F',  '1eU7T6HJjfGzELD4imsobxmIgo-PhD6sg', '1pizgmgzwm71rMBfWSLDQFnPCh7dj6xtI', '1vEMEaMTLyNquqReGUvuXIRPo4PxXiYoB', '1JCssy9KjwNwgPuuuUe5l7Kv7Th3L-oln','1Y-EAjkQEy3fEWXsHV2tW6fUVRD1l8yq7', '1_wGD1WOFZTST6_B9rv29N3m-PLxa_sqa']
 const story = [
   '4th December 2022, Engagement day',
   '15th April 2022, Prewedding photoshoot',
@@ -81,7 +81,7 @@ export default function Deck() {
                 {...bind(i)}
                 style={{
                   transform: interpolate([rot, scale], trans),
-                  backgroundImage: `url(images/${cards[i]})`,
+                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${cards[i]})`,
                   backgroundSize: 'cover',
                 }}
               />

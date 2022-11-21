@@ -1,12 +1,17 @@
-import React, { Fragment,  useState } from 'react'
+import React, { Fragment,  useEffect,  useState } from 'react'
 import { Row, Col, Button, Image, Tooltip, Card, } from 'antd'
 import { CopyOutlined } from '@ant-design/icons'
+import {useWindowSize} from './Util'
 
 require('./style/rsvp.css')
 
 export default function RsvpGift() {
+  const size = useWindowSize()
+  const [height, setHeight] = useState('750px')
 
-  const [height] = useState(window.innerWidth < 600 ? '860px' : '1000px')
+  useEffect(() => {
+    setHeight(size.width <= 640 ? '750px' : '1000px')
+  }, [size])
 
   function copy(copyText: string) {
     return copyText

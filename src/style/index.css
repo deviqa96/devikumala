@@ -159,3 +159,18 @@ body {
 .bgBold{
   background-color: #ECD4D3;
 }
+
+.externalLink{
+  height: 100%;
+  padding: 50px 20px;
+  background-image: url('images/cover.JPG');
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.transbox {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}

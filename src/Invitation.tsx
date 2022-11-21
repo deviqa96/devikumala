@@ -17,7 +17,7 @@ export default function Invitation() {
   const guestName = params.guestName || 'Guest'
   const [audio] = useState(
     new Audio(
-      'song.mp3'
+      'https://drive.google.com/uc?export=view&id=1GF0EMNLmU3izhtXiOEbRbDd5MrKzj8ls'
     )
   )
   const [playing, setPlaying] = useState(false)

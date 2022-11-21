@@ -27,7 +27,7 @@ export default function Schedule() {
     config: { duration: 1000 },
   })
 
-  const receptionSlides = ['reception-1.JPG', 'reception-2.JPG', 'reception-3.JPG']
+  const receptionSlides = ['1WAI0djxb8NWpnwRvBvou0SMHSTh_B-PQ', '1KmSJDS-5OQfFMCcPC1cft9uJyS1LTx7E', '12fqFFd5AVtBZhSsMy5Wp1sKB1ZF684jK']
   const [brideIndex, setBrideIndex] = useState<any>(0)
   const brideTransitions = useTransition(brideIndex, {
     key: brideIndex,
@@ -87,7 +87,7 @@ export default function Schedule() {
                 style={{
                   ...style,
                   // backgroundImage: `url(https://images.unsplash.com/${brideSlides[i]}?w=1920&q=80&auto=format&fit=crop)`,
-                  backgroundImage: `url(images/${receptionSlides[i]})`
+                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${receptionSlides[i]})`
                 }}
               />
             ))}

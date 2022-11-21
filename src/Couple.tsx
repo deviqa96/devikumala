@@ -4,8 +4,8 @@ import { InstagramOutlined } from '@ant-design/icons'
 import { useTransition, animated } from '@react-spring/web'
 
 require('./style/couple.css')
-const groomSlides = ['the-groom-one.JPG', 'the-groom-two.JPG', 'the-groom-three.JPG']
-const brideSlides = ['the-bride-one.JPG', 'the-bride-two.JPG', 'the-bride-three.JPG']
+const groomSlides = ['18_3D3L0shb-VTm7XDU6OUqWi8RfrLeJz', '1jsHd1SktbJ6qcc5oEhirOlrLV1fROghz', '1yqm3iPNM04BVs9SJ3jH9r-1_gwWk_Xk-'];
+const brideSlides = ['1fUxFwwCX7T5KBHPgnXbDQfxVay1QMo5j', '1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2', '1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2'];
 
 export default function Couple() {
   const [brideIndex, setBrideIndex] = useState<any>(0)
@@ -54,7 +54,7 @@ export default function Couple() {
                 style={{
                   ...style,
                   // backgroundImage: `url(https://images.unsplash.com/${brideSlides[i]}?w=1920&q=80&auto=format&fit=crop)`,
-                  backgroundImage: `url(images/${groomSlides[i]})`
+                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${groomSlides[i]})`
                 }}
               />
             ))}
@@ -96,7 +96,7 @@ export default function Couple() {
                 style={{
                   ...style,
                   // backgroundImage: `url(https://images.unsplash.com/${brideSlides[i]}?w=1920&q=80&auto=format&fit=crop)`,
-                  backgroundImage: `url(images/${brideSlides[i]})`
+                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${brideSlides[i]})`
                 }}
               />
             ))}
