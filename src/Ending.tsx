@@ -18,10 +18,7 @@ export default function Ending() {
       </div>
       {/* Copyright */}
       <div className="copyright center">
-        © 2022 Copyright by{' '}
-        <a href="https://id.linkedin.com/in/devi-kumala-b0459010b" target="_blank">
-          Devi Kumala
-        </a>
+        © 2022 Copyright Byvidé
       </div>
     </Fragment>
   )

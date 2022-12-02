@@ -15,19 +15,26 @@ import { useSpring, animated } from '@react-spring/web'
 export default function Invitation() {
   const params = useParams()
   const guestName = params.guestName || 'Guest'
-  const [audio] = useState(
-    new Audio(
-      'https://drive.google.com/uc?export=view&id=1GF0EMNLmU3izhtXiOEbRbDd5MrKzj8ls'
-    )
-  )
+  const [audio] = useState(new Audio('https://drive.google.com/uc?export=view&id=1GF0EMNLmU3izhtXiOEbRbDd5MrKzj8ls'))
   const [playing, setPlaying] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [isGoogleConnected, setIsGoogleConnected] = useState(0)
 
   useEffect(() => {
     playing ? audio.play() : audio.pause()
   }, [playing])
 
   useEffect(() => {
+    fetch('https://drive.google.com/', { mode: 'no-cors' })
+      .then(response => {
+        console.log(response)
+        setIsGoogleConnected(1)
+      })
+      .catch(err => {
+        console.log(err.message)
+        setIsGoogleConnected(-1)
+      })
+
     audio.addEventListener('ended', () => setPlaying(false))
     return () => {
       audio.removeEventListener('ended', () => setPlaying(false))
@@ -46,16 +53,17 @@ export default function Invitation() {
   const { buttonAnimate } = useSpring({
     from: { buttonAnimate: 0 },
     buttonAnimate: buttonAnimateState ? 1 : 0,
-    delay:500,
+    delay: 500,
     config: { duration: 1000 },
   })
+
   return (
     <Fragment>
       <Layout>
         <Content>
           {!isOpen ? (
             <Fragment>
-              <div className="cover fullPage center" >
+              <div className="cover fullPage center">
                 <div>
                   <p className="weddingOf">THE WEDDING OF</p>
                   <p className="charlesAndDevi">Charles & Devi </p>
@@ -65,20 +73,26 @@ export default function Invitation() {
                   <p>
                     <strong>{guestName}</strong>
                   </p>
-                  <div onClick={() => toggleButtonAnimate(!buttonAnimateState)}>
-                    <animated.div
-                      style={{
-                        opacity: buttonAnimate.to({ range: [0, 1], output: [0.5, 1] }),
-                        scale: buttonAnimate.to({
-                          range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
-                          output: [1, 0.9, 0.8, 0.7, 0.8, 0.9, 0.8, 0.9, 1],
-                        }),
-                      }}>
-                      <Button shape="round" color='white' style={{color:'white'}} onClick={viewInvitation}>
-                        View Invitation
-                      </Button>
-                    </animated.div>
-                  </div>
+                  {isGoogleConnected === -1 ? (
+                    <div>Please use non-office network such as (O)VPN to open the invitation.</div>
+                  ) : isGoogleConnected === 1 ? (
+                    <div onClick={() => toggleButtonAnimate(!buttonAnimateState)}>
+                      <animated.div
+                        style={{
+                          opacity: buttonAnimate.to({ range: [0, 1], output: [0.5, 1] }),
+                          scale: buttonAnimate.to({
+                            range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],
+                            output: [1, 0.9, 0.8, 0.7, 0.8, 0.9, 0.8, 0.9, 1],
+                          }),
+                        }}>
+                        <Button shape="round" color="white" style={{ color: 'white' }} onClick={viewInvitation}>
+                          View Invitation
+                        </Button>
+                      </animated.div>
+                    </div>
+                  ) : (
+                    <div>Checking your connection...</div>
+                  )}
                 </div>
               </div>
             </Fragment>

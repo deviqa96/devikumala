@@ -7,10 +7,10 @@ require('./style/rsvp.css')
 
 export default function RsvpGift() {
   const size = useWindowSize()
-  const [height, setHeight] = useState('750px')
+  const [height, setHeight] = useState('1000px')
 
   useEffect(() => {
-    setHeight(size.width <= 640 ? '750px' : '1000px')
+    setHeight(size.width <= 640 ? '1000px' : '1200px')
   }, [size])
 
   function copy(copyText: string) {
@@ -24,7 +24,7 @@ export default function RsvpGift() {
         <p className="textCurly">Gift </p>
       </div>
       <Row className="coupleHeader">
-        <p className="center"> We are happy to receive your congratulary gifts through our account below. </p>
+        <p className="center"> We are happy to receive your congratulary gifts at the wedding venue or online through our account below </p>
       </Row>
       <Row justify="center" style={{ backgroundColor: '#F3F7FA' }}>
         <Col span={12} lg={8} md={10} sm={12} xs={24} className="cardCol">
