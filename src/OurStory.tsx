@@ -4,9 +4,11 @@ import { useDrag } from 'react-use-gesture'
 
 require('./style/ourStory.css')
 
-const cards = ['1OrDygQzqzLHwpSMckwM7ji6ft_fshz9F',  '1eU7T6HJjfGzELD4imsobxmIgo-PhD6sg', '1pizgmgzwm71rMBfWSLDQFnPCh7dj6xtI', '1vEMEaMTLyNquqReGUvuXIRPo4PxXiYoB', '1JCssy9KjwNwgPuuuUe5l7Kv7Th3L-oln','1Y-EAjkQEy3fEWXsHV2tW6fUVRD1l8yq7', '1_wGD1WOFZTST6_B9rv29N3m-PLxa_sqa']
+// const cards = ['https://drive.google.com/uc?export=view&id=1OrDygQzqzLHwpSMckwM7ji6ft_fshz9F',  'https://drive.google.com/uc?export=view&id=1eU7T6HJjfGzELD4imsobxmIgo-PhD6sg', 'https://drive.google.com/uc?export=view&id=1pizgmgzwm71rMBfWSLDQFnPCh7dj6xtI', 'https://drive.google.com/uc?export=view&id=1vEMEaMTLyNquqReGUvuXIRPo4PxXiYoB', 'https://drive.google.com/uc?export=view&id=1JCssy9KjwNwgPuuuUe5l7Kv7Th3L-oln','https://drive.google.com/uc?export=view&id=1Y-EAjkQEy3fEWXsHV2tW6fUVRD1l8yq7', 'https://drive.google.com/uc?export=view&id=1_wGD1WOFZTST6_B9rv29N3m-PLxa_sqa'];
+
+const cards = ['images/story-7.jpg','images/story-6.jpg','images/story-5.jpg','images/story-4.jpg','images/story-3.jpg','images/story-2.jpeg','images/story-1a.jpeg','images/story-1.jpg']
 const story = [
-  // '4th December 2022, Engagement day',
+  '4th December 2022, Engagement day',
   '15th April 2022, Prewedding photoshoot',
   '13th March 2022, Proposal',
   '6th December 2019, Anniversary day celebration',
@@ -30,7 +32,7 @@ const trans = (r: number, s: number) =>
   `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
 
 export default function Deck() {
-  const [storyIndex, setStoryIndex] = useState(6)
+  const [storyIndex, setStoryIndex] = useState(7)
   const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
   const [props, api] = useSprings(cards.length, i => ({
     ...to(i),
@@ -81,7 +83,7 @@ export default function Deck() {
                 {...bind(i)}
                 style={{
                   transform: interpolate([rot, scale], trans),
-                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${cards[i]})`,
+                  backgroundImage: `url(${cards[i]})`,
                   backgroundSize: 'cover',
                 }}
               />

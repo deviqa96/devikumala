@@ -68,6 +68,54 @@
   font-family: "AbhayaLibre";
   color: #695A6A;
 }
+@media only screen and (min-width: 600px) {
+  .bride{
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    bottom: 185px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    font-family: "AbhayaLibre";
+    color: #695A6A;
+  }
+  .groom{
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    bottom: 185px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    font-family: "AbhayaLibre";
+    color: #695A6A;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .bride{
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    bottom: 235px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    font-family: "AbhayaLibre";
+    color: #695A6A;
+  }
+  .groom{
+    -webkit-transform: rotate(-90deg);
+    position: absolute;
+    bottom: 235px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    font-family: "AbhayaLibre";
+    color: #695A6A;
+  }
+}
 
 .theBride{
   position: absolute;

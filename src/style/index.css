@@ -45,6 +45,7 @@ body,
 body {
   font-family: Montserrat;
   margin: 0;
+  user-select: none;
 }
 
 *,
@@ -141,9 +142,22 @@ body {
 
 .thankyou{
   padding-top: 50px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   height: inherit;
 }
+
+@media only screen and (max-width: 600px) {
+  .thankyou{
+    padding-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: inherit;
+  }
+}
+
 
 .thankyou .charlesAndDevi{
   padding:20px;

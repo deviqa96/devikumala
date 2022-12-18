@@ -18,22 +18,22 @@ export default function Invitation() {
   const [audio] = useState(new Audio('https://drive.google.com/uc?export=view&id=1GF0EMNLmU3izhtXiOEbRbDd5MrKzj8ls'))
   const [playing, setPlaying] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const [isGoogleConnected, setIsGoogleConnected] = useState(0)
+  // const [isGoogleConnected, setIsGoogleConnected] = useState(0)
 
   useEffect(() => {
     playing ? audio.play() : audio.pause()
   }, [playing])
 
   useEffect(() => {
-    fetch('https://drive.google.com/', { mode: 'no-cors' })
-      .then(response => {
-        console.log(response)
-        setIsGoogleConnected(1)
-      })
-      .catch(err => {
-        console.log(err.message)
-        setIsGoogleConnected(-1)
-      })
+    // fetch('https://drive.google.com/', { mode: 'no-cors' })
+    //   .then(response => {
+    //     console.log(response)
+    //     setIsGoogleConnected(1)
+    //   })
+    //   .catch(err => {
+    //     console.log(err.message)
+    //     setIsGoogleConnected(-1)
+    //   })
 
     audio.addEventListener('ended', () => setPlaying(false))
     return () => {
@@ -73,9 +73,9 @@ export default function Invitation() {
                   <p>
                     <strong>{guestName}</strong>
                   </p>
-                  {isGoogleConnected === -1 ? (
+                  {/* {isGoogleConnected === -1 ? (
                     <div>Please use non-office network such as (O)VPN to open the invitation.</div>
-                  ) : isGoogleConnected === 1 ? (
+                  ) : isGoogleConnected === 1 ? ( */}
                     <div onClick={() => toggleButtonAnimate(!buttonAnimateState)}>
                       <animated.div
                         style={{
@@ -90,9 +90,9 @@ export default function Invitation() {
                         </Button>
                       </animated.div>
                     </div>
-                  ) : (
+                  {/* ) : (
                     <div>Checking your connection...</div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </Fragment>

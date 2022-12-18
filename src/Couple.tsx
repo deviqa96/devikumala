@@ -4,8 +4,11 @@ import { InstagramOutlined } from '@ant-design/icons'
 import { useTransition, animated } from '@react-spring/web'
 
 require('./style/couple.css')
-const groomSlides = ['18_3D3L0shb-VTm7XDU6OUqWi8RfrLeJz', '1jsHd1SktbJ6qcc5oEhirOlrLV1fROghz', '1yqm3iPNM04BVs9SJ3jH9r-1_gwWk_Xk-'];
-const brideSlides = ['1fUxFwwCX7T5KBHPgnXbDQfxVay1QMo5j', '1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2', '1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2'];
+// const groomSlides = ['https://drive.google.com/uc?export=view&id=18_3D3L0shb-VTm7XDU6OUqWi8RfrLeJz, 'https://drive.google.com/uc?export=view&id=1jsHd1SktbJ6qcc5oEhirOlrLV1fROghz, 'https://drive.google.com/uc?export=view&id=1yqm3iPNM04BVs9SJ3jH9r-1_gwWk_Xk-];
+// const brideSlides = ['https://drive.google.com/uc?export=view&id=1fUxFwwCX7T5KBHPgnXbDQfxVay1QMo5j, 'https://drive.google.com/uc?export=view&id=1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2, 'https://drive.google.com/uc?export=view&id=1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2];
+
+const groomSlides = ['images/the-groom-one.jpg', 'images/the-groom-two.jpg','images/the-groom-three.jpg'];
+const brideSlides = ['images/the-bride-one.jpg', 'images/the-bride-two.jpg','images/the-bride-three.jpg'];
 
 export default function Couple() {
   const [brideIndex, setBrideIndex] = useState<any>(0)
@@ -53,8 +56,7 @@ export default function Couple() {
                 className='coupleImgBg'
                 style={{
                   ...style,
-                  // backgroundImage: `url(https://images.unsplash.com/${brideSlides[i]}?w=1920&q=80&auto=format&fit=crop)`,
-                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${groomSlides[i]})`
+                  backgroundImage: `url(${groomSlides[i]})`
                 }}
               />
             ))}
@@ -73,7 +75,7 @@ export default function Couple() {
             <a href="https://www.instagram.com/charlessdarvinn/?hl=en" rel="nofollow" target="_blank">
               <InstagramOutlined /> charlessdarvinn
             </a><br />
-            Charles Darvin, S.T <br /> Son of MR. TJENG GIM HOK & MRS. KHE CHIU HONG
+            Charles Darvin, S.T <br /> Son of Mr. Tjeng Gim Hok & Mrs. Khe Chiu Hong
           </p>
         </Col>
       </Row>
@@ -88,15 +90,13 @@ export default function Couple() {
           <p className="theBride">The</p>
         </Col>
         <Col className="brideImage" lg={8} md={8} sm={18} xs={18}>
-          {/* <Image src="https://drive.google.com/uc?export=view&id=1risFuRnvF3gBWsJ7t2tc8VmDqNr6zvZK" /> */}
           <div>
             {brideTransitions((style,i) => (
               <animated.div
                 className='coupleImgBg'
                 style={{
                   ...style,
-                  // backgroundImage: `url(https://images.unsplash.com/${brideSlides[i]}?w=1920&q=80&auto=format&fit=crop)`,
-                  backgroundImage: `url(https://drive.google.com/uc?export=view&id=${brideSlides[i]})`
+                  backgroundImage: `url(${brideSlides[i]})`
                 }}
               />
             ))}
@@ -111,7 +111,7 @@ export default function Couple() {
             <a href="https://www.instagram.com/devieqa/?hl=en" rel="nofollow" target="_blank">
               <InstagramOutlined /> devieqa
             </a><br />
-            Devi Kumala, S.Kom <br /> Daughter of MR. PHAN KIM CHUN & MRS. KO MIAW KHIUK 
+            Devi Kumala, S.Kom <br /> Daughter of Mr. Phan Kim Chun & Mrs. Ko Miaw Khiuk 
           </p>
         </Col>
       </Row>
