@@ -1,8 +1,8 @@
 import { Button, Col, Image, Row } from 'antd'
 import React, { Fragment, useEffect, useState } from 'react'
-import { useWindowSize } from './Util'
+import { useWindowSize } from '../Util'
 import { InstagramOutlined, FacebookOutlined } from '@ant-design/icons'
-require('./style/gallery.css')
+require('../style/digital-invitation/gallery.css')
 
 const videoLink= "https://drive.google.com/uc?export=view&id=1HInz-fMQESLVZ6cVeT9bpMcflDFgmm5p"
 export default function Gallery() {
@@ -26,7 +26,7 @@ export default function Gallery() {
   ]
   for (let i = 0; i < idDrive.length; i++) {
     // items.push(`https://drive.google.com/uc?export=view&id=${idDrive[i]}`)
-    items.push(`images/gallery-${i+1}.jpg`)
+    items.push(`digital-invitation/images/gallery-${i+1}.jpg`)
   }
   let itemList = items.map((item :any, index:any) => {
     return (

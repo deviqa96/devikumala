@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Row, Col, Button, Image, Tooltip, Card } from 'antd'
 import { CopyOutlined } from '@ant-design/icons'
-import { useWindowSize } from './Util'
+import { useWindowSize } from '../Util'
 import copy from 'copy-to-clipboard'
 
-require('./style/rsvp.css')
+require('../style/digital-invitation/rsvp.css')
 
 export default function RsvpGift() {
   const size = useWindowSize()
