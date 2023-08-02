@@ -28,9 +28,9 @@ export default function Schedule() {
   })
 
   const receptionSlides = [
-    'digital-invitation/images/reception-1.jpg',
-    'digital-invitation/images/reception-2.jpg',
-    'digital-invitation/images/reception-3.jpg',
+    'images/reception-1.jpg',
+    'images/reception-2.jpg',
+    'images/reception-3.jpg',
     // 'https://drive.google.com/uc?export=view&id=1WAI0djxb8NWpnwRvBvou0SMHSTh_B-PQ',
     // 'https://drive.google.com/uc?export=view&id=1KmSJDS-5OQfFMCcPC1cft9uJyS1LTx7E',
     // 'https://drive.google.com/uc?export=view&id=12fqFFd5AVtBZhSsMy5Wp1sKB1ZF684jK',

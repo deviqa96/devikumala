@@ -26,7 +26,7 @@ export default function Gallery() {
   ]
   for (let i = 0; i < idDrive.length; i++) {
     // items.push(`https://drive.google.com/uc?export=view&id=${idDrive[i]}`)
-    items.push(`digital-invitation/images/gallery-${i+1}.jpg`)
+    items.push(`images/gallery-${i+1}.jpg`)
   }
   let itemList = items.map((item :any, index:any) => {
     return (
