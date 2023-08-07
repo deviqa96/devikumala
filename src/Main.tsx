@@ -14,46 +14,46 @@ export default function Main() {
     }
     const items = [{ key: '/', label: "Home" },
     { key: '/about', label: "About Me" },
+    // {
+    //     key: '/service', label: "Services", children: [
+    //         {
+    //             label: 'Website Development',
+    //             key: '/service#websitedevelopment',
+    //         }, {
+    //             label: 'Digital Design',
+    //             key: '/service#digitaldesign',
+    //         }, {
+    //             label: 'Budget Planner',
+    //             key: '/service#budgetplanner',
+    //         }]
+    // },
     {
-        key: '/service', label: "Services", children: [
+        key: '/chapter', label: "My Chapter", children: [
             {
-                label: 'Website Development',
-                key: '/service#websitedevelopment',
-            }, {
-                label: 'Digital Design',
-                key: '/service#digitaldesign',
-            }, {
-                label: 'Budget Planner',
-                key: '/service#budgetplanner',
-            }]
-    },
-    {
-        key: '/story', label: "My Story", children: [
-            {
-                label: 'Working as Website Developer',
-                key: '/story/work',
+                label: 'Working',
+                key: '/chapter/work',
             }, {
                 label: 'Engagement',
-                key: '/story/engagement',
+                key: '/chapter/engagement',
             }, {
                 label: 'Wedding',
-                key: '/story/wedding',
+                key: '/chapter/wedding',
             }, {
                 label: 'House',
-                key: '/story/house',
+                key: '/chapter/house',
             }, {
                 label: 'Pregnancy',
-                key: '/story/pregnancy',
+                key: '/chapter/pregnancy',
             }, {
                 label: 'Baby',
-                key: '/story/baby',
+                key: '/chapter/baby',
             },]
     },
     { key: '/portfolio', label: "Portfolio" },
     { key: '/contact', label: "Contact Me" }]
     const menu = (<Menu
         defaultSelectedKeys={[window.location.pathname]}
-        defaultOpenKeys={['/story','/service']}
+        defaultOpenKeys={['/chapter']}
         mode="inline"
         theme="light"
         inlineCollapsed={menuCollapsed}
@@ -62,7 +62,7 @@ export default function Main() {
     />)
     return (
         <Fragment>
-            <Layout style={{ fontFamily: 'Montserrat', fontWeight: 'bold', height: 'auto', minHeight: '100%'}}>
+            <Layout style={{ fontFamily: 'Montserrat', height: 'auto', minHeight: '100%'}}>
                 <Header //style={{ background: 'white', padding: '0 0 0 50px' }}
                     style={{
                         position: 'sticky',
@@ -84,7 +84,8 @@ export default function Main() {
                         <Col xxl={6} xl={6} lg={6} md={6} sm={24} xs={24} onClick={() => window.location.replace('/')}>
                             <Image
                                 className="byvideLogo"
-                                src={"/images/ByvideLogo.png"}
+                                src={"/images/logo-byvide.png"}
+                                alt={"logo byvide"}
                                 width={'30px'}
                                 preview={false} style={{ marginLeft: '50px', cursor: 'pointer' }}
                             />
