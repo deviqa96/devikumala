@@ -1,8 +1,27 @@
-import { Card, Col, Image, Row, Space } from 'antd'
+import { Button, Card, Col, Image, List, Row, Space } from 'antd'
 import React, { Fragment, } from 'react'
+import { MailOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
 
 
 export default function Home() {
+
+    const contactData = [
+        {
+            avatar: (<MailOutlined />),
+            title: 'byvide@gmail.com',
+            link: 'byvide@gmail.com'
+        },
+        {
+            avatar: (<LinkedinOutlined />),
+            title: 'LinkedIn',
+            link: 'https://www.linkedin.com/in/devi-kumala-b0459010b/'
+        },
+        {
+            avatar: (<InstagramOutlined />),
+            title: '@devieqa',
+            link: 'https://www.instagram.com/devieqa/?hl=en'
+        }
+    ]
 
     return (
         <Fragment>
@@ -16,7 +35,7 @@ export default function Home() {
                                 <p >
                                     Welcome to my homepage, My name is
                                     <span style={{ fontWeight: 'bolder', color: '#f33a6a' }}> DEVI KUMALA</span>.<br />
-                                    I'm a Software Engineer for 5 years. I passion in Website Development, Digital Design and Budget Planner.
+                                    I'm a Software Engineer since 2018 based in Jakarta, Indonesia. I have passion in Website Development, Digital Design and Budget Planner.
                                     I like to create cheaper DIY digital product like website, invitation, logo, souvenir design and Instagram filter.
                                     In this website I will share my own projects that may help you.
                                 </p>
@@ -42,52 +61,65 @@ export default function Home() {
                 <section id="chapter" className="homeSection">
                     <h2 className="homeSectionTitle">Chapter of My Life</h2>
                     <Row gutter={20} justify="space-evenly" style={{ marginTop: '10vh', marginLeft: '10%', marginRight: '10%' }}>
-                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh'}}>
-                            <Card className='homecard' style={{backgroundColor:'#ffb8b1'}}>
-                            <Image
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card className='homecard' style={{ backgroundColor: '#ffb8b1' }}>
+                                <Image
                                     src={"/images/working-brief-case.svg"}
                                     alt={"working brief case"}
                                     width={'90%'}
-                                    preview={false} 
+                                    preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder'}}>
-                                Working
+                            <h3 style={{ fontWeight: 'bolder' }}>
+                                Career
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique labore eligendi quos aliquam quasi, quibusdam repudiandae eos quod voluptatem dolorum fugit facilis adipisci tenetur iste consequuntur unde eaque optio.
+                                I am working as Software Engineer and specialized in Website Development since 2018.
+                                Understand to create a new website from scratch is my responsibility.
+                                I have experience and skill as a front end developer, back end developer and data analyst.
+                                Now Working with data analyst to create an effective data visualization on dashboard in my daily task.
+                                You can see my certified skills in my <a href='https://www.linkedin.com/in/devi-kumala-b0459010b/'>LinkedIn</a>.
                             </p>
                         </Col>
-                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh'}}>
-                            <Card className='homecard' style={{backgroundColor:'#f2f2f2'}}>
-                            <Image
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card className='homecard' style={{ backgroundColor: '#f2f2f2' }}>
+                                <Image
                                     src={"/images/ring-engagement.svg"}
                                     alt={"ring engagement"}
                                     width={'90%'}
-                                    preview={false} 
+                                    preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder'}}>
+                            <h3 style={{ fontWeight: 'bolder' }}>
                                 Engagement
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique labore eligendi quos aliquam quasi, quibusdam repudiandae eos quod voluptatem dolorum fugit facilis adipisci tenetur iste consequuntur unde eaque optio.
+                                Being engage is the biggest moment in my life, excited and delighted in many ways.
+                                However engagement cost a lot of money, luckily I had been saving money since I started working.
+                                This is when budgeting become my passion. I create a <a href=''>Budget for wedding</a>,
+                                <a href=''> Budget for newly wed house</a>,
+                                <a href=''> Budget for DIY bridal shower decoration </a>, cheap DIY souvenir for
+                                <a href=''> Sangjit souvenir</a>, and <a href=''>Bridemaid hampers</a>.
                             </p>
                         </Col>
-                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh'}}>
-                            <Card className='homecard' style={{backgroundColor:'#f33a6a'}}>
-                            <Image
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card className='homecard' style={{ backgroundColor: '#f33a6a' }}>
+                                <Image
                                     src={"/images/pregnant.svg"}
                                     alt={"pregnant"}
                                     width={'90%'}
-                                    preview={false} 
+                                    preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder'}}>
+                            <h3 style={{ fontWeight: 'bolder' }}>
                                 Motherhood
                             </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique labore eligendi quos aliquam quasi, quibusdam repudiandae eos quod voluptatem dolorum fugit facilis adipisci tenetur iste consequuntur unde eaque optio.
+                                After getting married, I'm pregnant in a short time.
+                                Be a mother is a big challenge for me, but thank you to my husband support, pregnancy is a wonderful unforgettable moment.
+                                I'm so excited when I prepare <a href=''>Pregnancy must-to-have list </a>,
+                                this <a href=''>Newborn need list </a>, and of course the <a href=''>One month baby souvenir</a>.
+
                             </p>
                         </Col>
                     </Row>
@@ -96,10 +128,39 @@ export default function Home() {
 
                 <section id="portfolio" className="homeSection">
                     <h2 className="homeSectionTitle">Portfolio</h2>
+                    {/* Website 
+                    Design 
+                    Budget Plan */}
                 </section>
 
                 <section id="contact" className="homeSection">
-                    <h2 className="homeSectionTitle">Contact Me</h2>
+                    <h2 className="homeSectionTitle">Let's have a talk</h2>
+                    <Row gutter={20}>
+                        <Col span={6}></Col>
+                        <Col span={6} >
+                            <List
+                                itemLayout="horizontal"
+                                dataSource={contactData}
+                                renderItem={(item) => (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            avatar={item.avatar}
+                                            title={<a href={item.link}>{item.title}</a>}
+                                        />
+                                    </List.Item>
+                                )}
+                            />
+                        </Col>
+                        <Col span={6}>
+                            <p>Hello,<br/>
+                            I would like to talk about your projects in byvide.com.
+                            </p>
+                            <Button>
+                                Send
+                            </Button>
+                        </Col>
+                        <Col span={6}></Col>
+                    </Row>
                 </section>
 
                 {/* <section className="homeSection">

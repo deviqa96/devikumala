@@ -30,8 +30,8 @@ export default function Main() {
     {
         key: '/chapter', label: "My Chapter", children: [
             {
-                label: 'Working',
-                key: '/chapter/work',
+                label: 'Career',
+                key: '/chapter/career',
             }, {
                 label: 'Engagement',
                 key: '/chapter/engagement',

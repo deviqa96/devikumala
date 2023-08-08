@@ -25,12 +25,12 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/service" element={<Service />} />
-            <Route path="/story/work" element={<Job />} />
-            <Route path="/story/engagement" element={<Engagement />} />
-            <Route path="/story/wedding" element={<Wedding />} />
-            <Route path="/story/house" element={<House />} />
-            <Route path="/story/pregnancy" element={<Pregnancy />} />
-            <Route path="/story/baby" element={<Baby />} />
+            <Route path="/chapter/career" element={<Job />} />
+            <Route path="/chapter/engagement" element={<Engagement />} />
+            <Route path="/chapter/wedding" element={<Wedding />} />
+            <Route path="/chapter/house" element={<House />} />
+            <Route path="/chapter/pregnancy" element={<Pregnancy />} />
+            <Route path="/chapter/baby" element={<Baby />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
