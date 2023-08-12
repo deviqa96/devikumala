@@ -1,6 +1,7 @@
 import { Button, Card, Col, Image, List, Row, Space } from 'antd'
 import React, { Fragment, } from 'react'
 import { MailOutlined, InstagramOutlined, LinkedinOutlined } from '@ant-design/icons';
+import Meta from 'antd/lib/card/Meta';
 
 
 export default function Home() {
@@ -8,8 +9,8 @@ export default function Home() {
     const contactData = [
         {
             avatar: (<MailOutlined />),
-            title: 'byvide@gmail.com',
-            link: 'byvide@gmail.com'
+            title: 'devikumala.byvide@gmail.com',
+            link: 'mailto:devikumala.byvide@gmail.com'
         },
         {
             avatar: (<LinkedinOutlined />),
@@ -20,6 +21,11 @@ export default function Home() {
             avatar: (<InstagramOutlined />),
             title: '@devieqa',
             link: 'https://www.instagram.com/devieqa/?hl=en'
+        },
+        {
+            avatar: (<img src='/images/icon-shopee.svg' alt='icon shopee outline' width='14px' />),
+            title: 'Byvidé Shopee Collection',
+            link: 'https://mycollection.shop/byvide'
         }
     ]
 
@@ -35,7 +41,7 @@ export default function Home() {
                                 <p >
                                     Welcome to my homepage, My name is
                                     <span style={{ fontWeight: 'bolder', color: '#f33a6a' }}> DEVI KUMALA</span>.<br />
-                                    I'm a Software Engineer since 2018 based in Jakarta, Indonesia. I have passion in Website Development, Digital Design and Budget Planner.
+                                    I'm a Software Engineer since 2018 based in Jakarta, Indonesia. I have passion in Website Development, Graphic Design and Budget Planner.
                                     I like to create cheaper DIY digital product like website, invitation, logo, souvenir design and Instagram filter.
                                     In this website I will share my own projects that may help you.
                                 </p>
@@ -58,20 +64,20 @@ export default function Home() {
                 </section>
                 <div className='homeCircle '></div>
 
-                <section id="chapter" className="homeSection">
-                    <h2 className="homeSectionTitle">Chapter of My Life</h2>
+                <section id="journal" className="homeSection">
+                    <h2 className="homeSectionTitle">My Journal</h2>
                     <Row gutter={20} justify="space-evenly" style={{ marginTop: '10vh', marginLeft: '10%', marginRight: '10%' }}>
                         <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
                             <Card className='homecard' style={{ backgroundColor: '#ffb8b1' }}>
                                 <Image
                                     src={"/images/working-brief-case.svg"}
                                     alt={"working brief case"}
-                                    width={'90%'}
+                                    width={'70%'}
                                     preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder' }}>
-                                Career
+                            <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+                                <a href='/journal/career' style={{ color: 'black' }}>Career</a>
                             </h3>
                             <p>
                                 I am working as Software Engineer and specialized in Website Development since 2018.
@@ -86,12 +92,12 @@ export default function Home() {
                                 <Image
                                     src={"/images/ring-engagement.svg"}
                                     alt={"ring engagement"}
-                                    width={'90%'}
+                                    width={'70%'}
                                     preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder' }}>
-                                Engagement
+                            <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+                                <a href='/journal/engagement' style={{ color: 'black' }}>Engagement</a>
                             </h3>
                             <p>
                                 Being engage is the biggest moment in my life, excited and delighted in many ways.
@@ -107,12 +113,12 @@ export default function Home() {
                                 <Image
                                     src={"/images/pregnant.svg"}
                                     alt={"pregnant"}
-                                    width={'90%'}
+                                    width={'70%'}
                                     preview={false}
                                 />
                             </Card>
-                            <h3 style={{ fontWeight: 'bolder' }}>
-                                Motherhood
+                            <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+                                <a href='/journal/motherhood' style={{ color: 'black' }}>Motherhood</a>
                             </h3>
                             <p>
                                 After getting married, I'm pregnant in a short time.
@@ -128,16 +134,42 @@ export default function Home() {
 
                 <section id="portfolio" className="homeSection">
                     <h2 className="homeSectionTitle">Portfolio</h2>
-                    {/* Website 
-                    Design 
-                    Budget Plan */}
+                    <Row gutter={20} justify="space-evenly" style={{ marginTop: '10vh', marginLeft: '10%', marginRight: '10%' }}>
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card
+                                hoverable
+                                style={{ width: '100%' }}
+                                cover={<img alt="portofolio Website digital invitation Byvide" src="images/portofolio-website-digital-invitation-byvide.jpg" />}
+                            >
+                                <Meta title="Website Development" description="Digital Invitation, Portfolio Website" />
+                            </Card>
+                        </Col>
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card
+                                hoverable
+                                style={{ width: '100%' }}
+                                cover={<img alt="portofolio graphic design byvide" src="images/portofolio-graphic-design-byvide.jpg" />}
+                            >
+                                <Meta title="Graphic Design" description="Digital Invitation, Souvenir Design, Poster, Logo" />
+                            </Card>
+                        </Col>
+                        <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
+                            <Card
+                                hoverable
+                                style={{ width: '100%' }}
+                                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                            >
+                                <Meta title="Budget Planner" description="Hampers Budget, Decor Budget, Wedding Budget" />
+                            </Card>
+                        </Col>
+                    </Row>
                 </section>
 
                 <section id="contact" className="homeSection">
                     <h2 className="homeSectionTitle">Let's have a talk</h2>
-                    <Row gutter={20}>
-                        <Col span={6}></Col>
-                        <Col span={6} >
+                    <Row gutter={20} style={{ margin: '20px' }}>
+                        <Col xxl={6} xl={6} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#f2f2f2', padding: '20px' }}></Col>
+                        <Col xxl={6} xl={6} lg={10} md={12} sm={24} xs={24} style={{ backgroundColor: '#f2f2f2', padding: '20px' }}>
                             <List
                                 itemLayout="horizontal"
                                 dataSource={contactData}
@@ -145,21 +177,21 @@ export default function Home() {
                                     <List.Item>
                                         <List.Item.Meta
                                             avatar={item.avatar}
-                                            title={<a href={item.link}>{item.title}</a>}
+                                            title={<a href={item.link} target='_blank'>{item.title}</a>}
                                         />
                                     </List.Item>
                                 )}
                             />
                         </Col>
-                        <Col span={6}>
-                            <p>Hello,<br/>
-                            I would like to talk about your projects in byvide.com.
+                        <Col xxl={6} xl={6} lg={10} md={12} sm={24} xs={24} style={{ backgroundColor: '#ffb8b1', padding: '32px' }}>
+                            <p>
+                                Talk with me, ask for help or anything through email by click the button below.
                             </p>
-                            <Button>
-                                Send
+                            <Button style={{ backgroundColor: '#f2f2f2' }}>
+                                <a href='https://mail.google.com/mail/?view=cm&fs=1&to=devikumala.byvide@gmail.com&su=Talk with Devi&body=Hi Devi, I reach you from Byvidé.com.' target='_blank'>Send</a>
                             </Button>
                         </Col>
-                        <Col span={6}></Col>
+                        <Col xxl={6} xl={6} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#ffb8b1', padding: '20px' }}></Col>
                     </Row>
                 </section>
 

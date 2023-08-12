@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import { Layout, Menu, Row, Col, Popover, Button, Image } from 'antd';
+import { Layout, Menu, Row, Col, Popover, Button, Image, BackTop } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { useWindowSize } from './Util'
 import { Outlet } from 'react-router-dom';
@@ -13,7 +13,7 @@ export default function Main() {
         setMenuCollapsed(!menuCollapsed)
     }
     const items = [{ key: '/', label: "Home" },
-    { key: '/about', label: "About Me" },
+    { key: '#about', label: "About Me" },
     // {
     //     key: '/service', label: "Services", children: [
     //         {
@@ -28,32 +28,26 @@ export default function Main() {
     //         }]
     // },
     {
-        key: '/chapter', label: "My Chapter", children: [
+        key: '/journal', label: "Journal", children: [
             {
                 label: 'Career',
-                key: '/chapter/career',
+                key: '/journal/career',
             }, {
                 label: 'Engagement',
-                key: '/chapter/engagement',
+                key: '/journal/engagement',
             }, {
-                label: 'Wedding',
-                key: '/chapter/wedding',
-            }, {
-                label: 'House',
-                key: '/chapter/house',
-            }, {
-                label: 'Pregnancy',
-                key: '/chapter/pregnancy',
-            }, {
-                label: 'Baby',
-                key: '/chapter/baby',
-            },]
+            //     label: 'House',
+            //     key: '/journal/house',
+            // }, {
+                label: 'Motherhood',
+                key: '/journal/motherhood',
+            }]
     },
-    { key: '/portfolio', label: "Portfolio" },
-    { key: '/contact', label: "Contact Me" }]
+    { key: '#portfolio', label: "Portfolio" },
+    { key: '#contact', label: "Contact Me" }]
     const menu = (<Menu
         defaultSelectedKeys={[window.location.pathname]}
-        defaultOpenKeys={['/chapter']}
+        defaultOpenKeys={['/journal']}
         mode="inline"
         theme="light"
         inlineCollapsed={menuCollapsed}
@@ -62,7 +56,7 @@ export default function Main() {
     />)
     return (
         <Fragment>
-            <Layout style={{ fontFamily: 'Montserrat', height: 'auto', minHeight: '100%'}}>
+            <Layout style={{ fontFamily: 'Montserrat', height: 'auto', minHeight: '100%' }}>
                 <Header //style={{ background: 'white', padding: '0 0 0 50px' }}
                     style={{
                         position: 'sticky',
@@ -80,7 +74,7 @@ export default function Main() {
                         </Popover>
 
                     </div>
-                    <Row style={{ borderBottom:'2px solid #f33a6a'}}>
+                    <Row style={{ borderBottom: '2px solid #f33a6a' }}>
                         <Col xxl={6} xl={6} lg={6} md={6} sm={24} xs={24} onClick={() => window.location.replace('/')}>
                             <Image
                                 className="byvideLogo"
@@ -104,10 +98,13 @@ export default function Main() {
                         </Col>
                     </Row>
                 </Header>
-                <Content style={{ backgroundColor:'white'}} >
+                <Content style={{ backgroundColor: 'white' }} >
                     <Outlet />
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Byvidé.com created by Devi Kumala</Footer>
+                <Footer style={{ textAlign: 'center' }}>
+                    Copyright @2023 Byvidé.com by Devi Kumala v{process.env.REACT_APP_VERSION}
+                    <BackTop />
+                </Footer>
             </Layout>
         </Fragment>
     )

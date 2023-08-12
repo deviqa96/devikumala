@@ -226,6 +226,7 @@ body {
   padding: 50px;
 }
 
+
 .ant-menu-item:hover,
 .ant-menu-submenu:hover,
 .ant-menu-submenu-active,
@@ -253,10 +254,15 @@ body {
 .ant-menu-submenu-title:hover,
 .ant-menu-submenu-title:hover::after,
 .ant-btn:hover,
+a:hover,
 .ant-btn:focus,
 .ant-menu-submenu:hover .ant-menu-submenu-title .ant-menu-submenu-arrow {
 
   color: #f33a6a !important;
+}
+
+.ant-btn:hover {
+  border-color: #f33a6a !important;
 }
 
 .ant-menu-item::after,
@@ -327,12 +333,12 @@ body {
   margin: 0;
 }
 
-.homecard{
+.homecard {
   width: 60%;
   margin: auto !important;
   text-align: center;
   border: none !important;
-  padding: 5%!important;
+  padding: 5% !important;
   border-radius: 15% !important;
   margin-bottom: 30px !important;
 }
