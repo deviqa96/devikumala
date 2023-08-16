@@ -11,6 +11,7 @@ import Gallery from './Gallery'
 import RsvpGift from './RsvpGift'
 import Ending from './Ending'
 import { useSpring, animated } from '@react-spring/web'
+require('../style/digital-invitation/main.css')
 
 export default function Invitation() {
   const params = useParams()

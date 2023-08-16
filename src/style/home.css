@@ -1,0 +1,78 @@
+
+
+@media only screen and (max-width: 768px) {
+    .homeCircle {
+        height: 50vh;
+        background: #f33a6a;
+        border-radius: 50%;
+        width: 50vh;
+        position: absolute;
+        top: 90vh;
+        right: 90%;
+    }
+
+    .homeSection {
+        min-height: 90vh;
+        margin-bottom: 5vh;
+    }
+
+    .homeSummary {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .homeCircle {
+        height: 50vh;
+        background: #f33a6a;
+        border-radius: 50%;
+        width: 50vh;
+        position: absolute;
+        top: 70vh;
+        right: 90%;
+    }
+
+    .homeSection {
+        min-height: 70vh;
+        margin-bottom: 5vh;
+    }
+
+    .homeSummary {
+        margin-top: 5vh;
+    }
+}
+
+.homeSectionName {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    top: 4vh;
+    font-size: 3ch;
+    left: 1.5ch;
+    z-index: 5;
+    font-weight: bolder;
+    line-height: 2ch;
+}
+
+.homeSectionTitle {
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    margin: 0;
+}
+
+.homecard {
+    width: 60%;
+    margin: auto !important;
+    text-align: center;
+    border: none !important;
+    padding: 5% !important;
+    border-radius: 15% !important;
+    margin-bottom: 30px !important;
+}
+
+.portfolioCard .ant-card-cover {
+    background-color: #fff5ec;
+}

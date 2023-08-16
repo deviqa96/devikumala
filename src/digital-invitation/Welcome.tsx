@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { Button, Col, Row } from 'antd'
 import { CalendarOutlined,UpOutlined } from '@ant-design/icons'
 import { useSpring, animated } from '@react-spring/web'
+require('../style/digital-invitation/main.css')
 
 export default function Welcome() {
   const [days, setDays] = useState(0)

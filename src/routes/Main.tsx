@@ -1,9 +1,11 @@
 import React, { Fragment, useState } from 'react'
 import { Layout, Menu, Row, Col, Popover, Button, Image, BackTop } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { useWindowSize } from './Util'
+import { useWindowSize } from '../Util'
 import { Outlet } from 'react-router-dom';
 const { Header, Content, Footer } = Layout;
+
+require('../style/main.css')
 
 export default function Main() {
     const size = useWindowSize()
@@ -12,8 +14,8 @@ export default function Main() {
     const toggleCollapsed = () => {
         setMenuCollapsed(!menuCollapsed)
     }
-    const items = [{ key: '/', label: "Home" },
-    { key: '#about', label: "About Me" },
+    const items = [{ key: '/', label: "Beranda" },
+    { key: '/about', label: "Tentang Saya" },
     // {
     //     key: '/service', label: "Services", children: [
     //         {
@@ -28,26 +30,23 @@ export default function Main() {
     //         }]
     // },
     {
-        key: '/journal', label: "Journal", children: [
+        key: '/blog', label: "Blog", children: [
             {
-                label: 'Career',
-                key: '/journal/career',
+                label: 'Karir',
+                key: '/blog/career',
             }, {
-                label: 'Engagement',
-                key: '/journal/engagement',
+                label: 'Pernikahan',
+                key: '/blog/engagement',
             }, {
-            //     label: 'House',
-            //     key: '/journal/house',
-            // }, {
-                label: 'Motherhood',
-                key: '/journal/motherhood',
+                label: 'Ibu & Bayi',
+                key: '/blog/motherhood',
             }]
     },
-    { key: '#portfolio', label: "Portfolio" },
-    { key: '#contact', label: "Contact Me" }]
+    { key: '/portfolio', label: "Portofolio" },
+    { key: '/contact', label: "Hubungi Saya" }]
     const menu = (<Menu
         defaultSelectedKeys={[window.location.pathname]}
-        defaultOpenKeys={['/journal']}
+        defaultOpenKeys={['/blog']}
         mode="inline"
         theme="light"
         inlineCollapsed={menuCollapsed}
@@ -56,7 +55,7 @@ export default function Main() {
     />)
     return (
         <Fragment>
-            <Layout style={{ fontFamily: 'Montserrat', height: 'auto', minHeight: '100%' }}>
+            <Layout className='overwriteAntdStyle' style={{ fontFamily: 'Montserrat', height: 'auto', minHeight: '100%' }}>
                 <Header //style={{ background: 'white', padding: '0 0 0 50px' }}
                     style={{
                         position: 'sticky',
@@ -69,7 +68,7 @@ export default function Main() {
                         padding: '0 0 0 0'
                     }}>
                     <div className="menuCollapse" style={{ display: size.width > 768 ? 'none' : 'block' }}>
-                        <Popover content={menu} trigger="click">
+                        <Popover content={menu} trigger="click" placement='bottomRight'>
                             <Button onClick={toggleCollapsed} style={{ border: 'none' }}><MenuOutlined /></Button>
                         </Popover>
 
@@ -77,7 +76,6 @@ export default function Main() {
                     <Row style={{ borderBottom: '2px solid #f33a6a' }}>
                         <Col xxl={6} xl={6} lg={6} md={6} sm={24} xs={24} onClick={() => window.location.replace('/')}>
                             <Image
-                                className="byvideLogo"
                                 src={"/images/logo-byvide.png"}
                                 alt={"logo byvide"}
                                 width={'30px'}
@@ -99,7 +97,9 @@ export default function Main() {
                     </Row>
                 </Header>
                 <Content style={{ backgroundColor: 'white' }} >
-                    <Outlet />
+                    <div className='paddingContent'>
+                        <Outlet />
+                    </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
                     Copyright @2023 Byvidé.com by Devi Kumala v{process.env.REACT_APP_VERSION}

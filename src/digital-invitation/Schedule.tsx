@@ -3,6 +3,7 @@ import { Row, Col, Button, Card, Image } from 'antd'
 import { EnvironmentOutlined } from '@ant-design/icons'
 import { useSpring, animated, useTransition } from '@react-spring/web'
 import { useIntersectionObserver } from '../Util'
+require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/schedule.css')
 
 export default function Schedule() {

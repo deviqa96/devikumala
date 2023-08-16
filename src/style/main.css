@@ -1,0 +1,54 @@
+.ant-menu-item:hover,
+.ant-menu-submenu:hover,
+.ant-menu-submenu-active,
+.ant-menu-item-selected {
+    /* border-bottom: 1px solid black!important; */
+    border-bottom: none !important;
+    background-color: #f0f2f5 !important;
+    color: #f33a6a !important;
+}
+
+.ant-menu-item:hover::after,
+.ant-menu-submenu:hover::after,
+.ant-menu-submenu-active::after {
+    /* border-bottom: 2px solid black!important; */
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+
+.ant-menu-inline .ant-menu-item::after,
+.ant-menu-item .ant-menu-item-selected .ant-menu-item-only-child {
+    border-right: 3px #f33a6a !important;
+}
+
+.ant-menu-submenu-title:hover,
+.ant-menu-submenu-title:hover::after,
+.ant-menu-submenu:hover .ant-menu-submenu-title .ant-menu-submenu-arrow,
+.ant-menu-submenu-selected .ant-menu-submenu-title .ant-menu-title-content,
+.overwriteAntdStyle .ant-btn:hover,
+.overwriteAntdStyle a:hover,
+.overwriteAntdStyle .ant-btn:focus {
+    color: #f33a6a !important;
+}
+
+.overwriteAntdStyle .ant-btn:hover {
+    border-color: #f33a6a !important;
+}
+
+.overwriteAntdStyle .ant-menu-item::after,
+.overwriteAntdStyle .ant-menu-submenu::after {
+    border-bottom: none !important;
+}
+
+
+.menuCollapse {
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.paddingContent {
+    padding: 40px;
+}

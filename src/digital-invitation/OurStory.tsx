@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
 
+require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/ourStory.css')
 
 // const cards = ['https://drive.google.com/uc?export=view&id=1OrDygQzqzLHwpSMckwM7ji6ft_fshz9F',  'https://drive.google.com/uc?export=view&id=1eU7T6HJjfGzELD4imsobxmIgo-PhD6sg', 'https://drive.google.com/uc?export=view&id=1pizgmgzwm71rMBfWSLDQFnPCh7dj6xtI', 'https://drive.google.com/uc?export=view&id=1vEMEaMTLyNquqReGUvuXIRPo4PxXiYoB', 'https://drive.google.com/uc?export=view&id=1JCssy9KjwNwgPuuuUe5l7Kv7Th3L-oln','https://drive.google.com/uc?export=view&id=1Y-EAjkQEy3fEWXsHV2tW6fUVRD1l8yq7', 'https://drive.google.com/uc?export=view&id=1_wGD1WOFZTST6_B9rv29N3m-PLxa_sqa'];

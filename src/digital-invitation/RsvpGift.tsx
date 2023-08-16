@@ -4,6 +4,7 @@ import { CopyOutlined } from '@ant-design/icons'
 import { useWindowSize } from '../Util'
 import copy from 'copy-to-clipboard'
 
+require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/rsvp.css')
 
 export default function RsvpGift() {
@@ -39,7 +40,7 @@ export default function RsvpGift() {
             <div className="accountNumber">
               0692290559{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">
-                <Button type="text" onClick={() => copy('0692290559')} icon={<CopyOutlined />} />
+                <Button type="text" onClick={() => copy('XXXXXXXX59')} icon={<CopyOutlined />} />
               </Tooltip>
             </div>
             <p className="accountName">Charles Darvin</p>
@@ -58,7 +59,7 @@ export default function RsvpGift() {
             <div className="accountNumber">
               5271364114{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">
-                <Button type="text" onClick={() => copy('5271364114')} icon={<CopyOutlined />} />
+                <Button type="text" onClick={() => copy('XXXXXXXX14')} icon={<CopyOutlined />} />
               </Tooltip>
             </div>
             <p className="accountName">Devi Kumala</p>

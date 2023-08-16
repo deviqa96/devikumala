@@ -1,5 +1,6 @@
 import { Image } from 'antd'
 import React, { Fragment } from 'react'
+require('../style/digital-invitation/main.css')
 
 export default function Ending() {
   const bgImage = 'url(images/thankyou.jpg)'; //'url(https://drive.google.com/uc?export=view&id=1SSGYjD-njiVGsAb1FaKgIECR6TXkbvyY)'

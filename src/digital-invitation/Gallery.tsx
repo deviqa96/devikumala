@@ -2,6 +2,7 @@ import { Button, Col, Image, Row } from 'antd'
 import React, { Fragment, useEffect, useState } from 'react'
 import { useWindowSize } from '../Util'
 import { InstagramOutlined, FacebookOutlined } from '@ant-design/icons'
+require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/gallery.css')
 
 const videoLink= "https://drive.google.com/uc?export=view&id=1HInz-fMQESLVZ6cVeT9bpMcflDFgmm5p"

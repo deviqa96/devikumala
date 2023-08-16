@@ -1,6 +1,7 @@
 import { Button, Col, Row } from 'antd'
 import React, { Fragment } from 'react'
 import { InstagramOutlined, FacebookOutlined } from '@ant-design/icons'
+require('../style/digital-invitation/main.css')
 
 export default function ExternalLinks() {
   return (

@@ -3,6 +3,7 @@ import { Col,  Row } from 'antd'
 import { InstagramOutlined } from '@ant-design/icons'
 import { useTransition, animated } from '@react-spring/web'
 
+require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/couple.css')
 // const groomSlides = ['https://drive.google.com/uc?export=view&id=18_3D3L0shb-VTm7XDU6OUqWi8RfrLeJz, 'https://drive.google.com/uc?export=view&id=1jsHd1SktbJ6qcc5oEhirOlrLV1fROghz, 'https://drive.google.com/uc?export=view&id=1yqm3iPNM04BVs9SJ3jH9r-1_gwWk_Xk-];
 // const brideSlides = ['https://drive.google.com/uc?export=view&id=1fUxFwwCX7T5KBHPgnXbDQfxVay1QMo5j, 'https://drive.google.com/uc?export=view&id=1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2, 'https://drive.google.com/uc?export=view&id=1Tf4McZor26aFsh7BJnEk44oFcgGXGNG2];
