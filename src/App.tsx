@@ -9,6 +9,9 @@ import About from './routes/About'
 import Portfolio from './routes/Portfolio/Portfolio'
 import Contact from './routes/Contact'
 import Blog from './routes/Blog/Blog'
+import BlogView from './routes/Blog/BlogView'
+import PortfolioView from './routes/Home/PortfolioView'
+import Page404 from './routes/Page404'
 
 export default function App() {
   return (
@@ -18,17 +21,21 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Main />} >
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/tentang" element={<About />} />
             {/*<Route path="/service" element={<Service />} /> */}
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:category" element={<Blog />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/portfolio/:category" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog/:param" element={<BlogView />} />
+            <Route path="/blogs/:param" element={<Blog />} />
+            <Route path="/blogs/" element={<Blog />} />
+            <Route path="/portofolio/:param" element={<PortfolioView />} />
+            <Route path="/portofolios/:param" element={<Portfolio />} />
+            <Route path="/portofolios/" element={<Portfolio />} />
+            <Route path="/kontak" element={<Contact />} />
+            <Route element={<Page404/>} />
           </Route>
           <Route path="/digital-invitation" element={<Invitation />} />
           <Route path="/digital-invitation/:guestName" element={<Invitation />} />
           <Route path="/digital-invitation/links" element={<ExternalLinks />} />
+          <Route element={<Page404/>} />
         </Routes>
       </Router>
     </Fragment>

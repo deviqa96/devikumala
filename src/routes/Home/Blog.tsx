@@ -10,61 +10,61 @@ export default function Blog() {
                     <Card className='homecard' style={{ backgroundColor: '#ffb8b1' }}>
                         <Image
                             src={"/images/working-brief-case.svg"}
-                            alt={"working brief case"}
+                            alt={"tas kantor"}
                             width={'70%'}
                             preview={false}
                         />
                     </Card>
                     <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
-                        <a href='/blog/career' style={{ color: 'black' }}>Karir</a>
+                        <a href='/blogs/karir' style={{ color: 'black' }}>Karir</a>
                     </h3>
                     <p>
-                        I am working as Software Engineer and specialized in Website Development since 2018.
-                        Understand to create a new website from scratch is my responsibility.
-                        I have experience and skill as a front end developer, back end developer and data analyst.
-                        Now Working with data analyst to create an effective data visualization on dashboard in my daily task.
-                        You can see my certified skills in my <a href='https://www.linkedin.com/in/devi-kumala-b0459010b/' target='_blank'>LinkedIn</a>.
+                        Saya memulai karir sebagai Software Engineer sejak lulus kuliah pada 2018. Spesialisasi saya di bidang Website Development
+                        Saya juga berpengalaman sebagai Full Stack Developer ( Front end developer, Back end developer dan Data analyst).
+                        Project terbaru yang saat saya kerjakan saat ini adalah membuat Data Visualization yang effective dalam sebuah website Dashboard.
+                        Untuk melihat skill bersertifikat saya silakan kunjungi profil <a href='https://www.linkedin.com/in/devi-kumala-b0459010b/' target='_blank'>LinkedIn</a> saya.
                     </p>
                 </Col>
                 <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
                     <Card className='homecard' style={{ backgroundColor: '#f2f2f2' }}>
                         <Image
                             src={"/images/ring-engagement.svg"}
-                            alt={"ring engagement"}
+                            alt={"cincin tunangan"}
                             width={'70%'}
                             preview={false}
                         />
                     </Card>
                     <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
-                        <a href='/blog/engagement' style={{ color: 'black' }}>Pernikahan</a>
+                        <a href='/blogs/pernikahan' style={{ color: 'black' }}>Pernikahan</a>
                     </h3>
                     <p>
-                        Being engage is the biggest moment in my life, excited and delighted in many ways.
-                        However engagement cost a lot of money, luckily I had been saving money since I started working.
-                        This is when budgeting become my passion. I create a
-                        <a href='/blog/engagement/'>Budget for wedding</a>,
-                        <a href='/blog/engagement/'> Budget for newly wed house</a>,
-                        <a href='/blog/engagement/'> Budget for DIY bridal shower decoration </a>, cheap DIY souvenir for
-                        <a href='/blog/engagement/'> Sangjit souvenir</a>, and <a href=''>Bridemaid hampers</a>.
+                        Menikah adalah moment terbesar yang ada pada hidup saya, saya sangat bersemangat dan gembira.
+                        Bagaimana pun juga pernikahan membutuhkan banyak dana dan tenaga. Perencanaan keuangan untuk menikah sejak awal kerja sangat diperlukan.
+                        Ini adalah awal dimana Budgeting (mengatur anggaran) menjadi passion saya.
+                        Saya pernah membuat
+                        <a href='/blogs/pernikahan/'> Budget untuk sangjit</a>,
+                        <a href='/blogs/pernikahan/'> Budget untuk pernikahan</a>,
+                        <a href='/blogs/pernikahan/'> Budget untuk rumah pengantin baru</a>,
+                        <a href='/blogs/pernikahan/'> Budget untuk Bridal Shower </a>, DIY souvenir untuk
+                        <a href='/blogs/pernikahan/'> Souvenir Sangjit</a>, dan <a href=''>Hampers Bridemaid</a>.
                     </p>
                 </Col>
                 <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
                     <Card className='homecard' style={{ backgroundColor: '#f33a6a' }}>
                         <Image
                             src={"/images/pregnant.svg"}
-                            alt={"pregnant"}
+                            alt={"hamil"}
                             width={'70%'}
                             preview={false}
                         />
                     </Card>
                     <h3 style={{ fontWeight: 'bolder', textAlign: 'center' }}>
-                        <a href='/blog/motherhood/' style={{ color: 'black' }}>Ibu & Bayi</a>
+                        <a href='/blogs/ibu-dan-bayi/' style={{ color: 'black' }}>Ibu & Bayi</a>
                     </h3>
                     <p>
-                        After getting married, I'm pregnant in a short time.
-                        Be a mother is a big challenge for me, but thank you to my husband support, pregnancy is a wonderful unforgettable moment.
-                        I'm so excited when I prepare <a href=''>Pregnancy must-to-have list </a>,
-                        this <a href=''>Newborn need list </a>, and of course the <a href=''>One month baby souvenir</a>.
+                        Setelah menikah, tidak lama kemudian saya hamil. Masa hamil dan menjadi ibu adalah tantangan besar untuk saya. 
+                        Tetapi karena dukungan suami dan keluarga, hamil menjadi pengalaman indah yang tak terlupakan. 
+                        Saya sangat bersemangat saat mempersiapkan <a href=''>Daftar barang kehamilan</a>, <a href=''>Daftar barang bayi newborn</a>, dan <a href=''>Souvenir bayi satu bulan</a>.
 
                     </p>
                 </Col>

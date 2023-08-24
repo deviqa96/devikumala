@@ -15,7 +15,7 @@ export default function Main() {
         setMenuCollapsed(!menuCollapsed)
     }
     const items = [{ key: '/', label: "Beranda" },
-    { key: '/about', label: "Tentang Saya" },
+    { key: '/tentang', label: "Tentang Saya" },
     // {
     //     key: '/service', label: "Services", children: [
     //         {
@@ -30,20 +30,20 @@ export default function Main() {
     //         }]
     // },
     {
-        key: '/blog', label: "Blog", children: [
+        key: '/blogs', label: "Blog", children: [
             {
                 label: 'Karir',
-                key: '/blog/career',
+                key: '/blogs/karir',
             }, {
                 label: 'Pernikahan',
-                key: '/blog/engagement',
+                key: '/blogs/pernikahan',
             }, {
                 label: 'Ibu & Bayi',
-                key: '/blog/motherhood',
+                key: '/blogs/ibu-dan-bayi',
             }]
     },
-    { key: '/portfolio', label: "Portofolio" },
-    { key: '/contact', label: "Hubungi Saya" }]
+    { key: '/portofolios', label: "Portofolio" },
+    { key: '/kontak', label: "Hubungi Saya" }]
     const menu = (<Menu
         defaultSelectedKeys={[window.location.pathname]}
         defaultOpenKeys={['/blog']}
@@ -102,7 +102,7 @@ export default function Main() {
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
-                    Copyright @2023 Byvidé.com by Devi Kumala v{process.env.REACT_APP_VERSION}
+                    Version{process.env.REACT_APP_VERSION} Copyright @2023 Byvidé.com
                     <BackTop />
                 </Footer>
             </Layout>

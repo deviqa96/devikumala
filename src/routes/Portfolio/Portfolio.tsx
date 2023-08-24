@@ -5,11 +5,11 @@ import { useParams } from 'react-router-dom';
 
 export default function Portfolio() {
 
-    let { category } = useParams();
+    let { param } = useParams();
     return (
         <Fragment>
             {/* <HomePortfolio /> */}
-            <h1>{category}</h1>
+            <h1>{param}</h1>
         </Fragment>
     )
 }
