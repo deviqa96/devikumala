@@ -26,7 +26,8 @@
 
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/Montserrat.woff2);
+  src: url(fonts/MontserratMedium.woff2);
+  
 }
 
 @font-face {
@@ -50,5 +51,4 @@ body,
 body {
   font-family: Montserrat;
   margin: 0;
-  user-select: none;
 }

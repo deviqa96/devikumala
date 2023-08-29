@@ -14,8 +14,8 @@ export default function About() {
                         <p >
                             Selamat datang di halaman saya, Nama saya
                             <span style={{ fontWeight: 'bolder', color: '#f33a6a' }}> DEVI KUMALA</span>.<br />
-                            Saya bekerja sebagai Software Engineer sejak 2018 di Jakarta dan Tangerang, Indonesia. Saya mendalami Website Development, Graphic Design dan Budget Planner.
-                            Saya menyukai membuat DIY digital product (Do it yourself atau buatan sendiri) seperti website, undangan, logo, desain souvenir dan filter Instagram.
+                            Saya bekerja sebagai Software Engineer sejak 2018 di area Jakarta dan Tangerang, Indonesia. Saya mendalami Website Development, Graphic Design dan Budget Planner.
+                            Membuat digital product seperti website, undangan, logo, desain souvenir, planner template dan filter Instagram adalah passion saya.
                             Semoga halaman ini dapat membantu anda.
                         </p>
                     </Space>

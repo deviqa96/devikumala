@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import { Layout, Menu, Row, Col, Popover, Button, Image, BackTop } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { useWindowSize } from '../Util'
+import { useWindowSize } from './Component/Util'
 import { Outlet } from 'react-router-dom';
 const { Header, Content, Footer } = Layout;
 
@@ -89,7 +89,8 @@ export default function Main() {
                                 mode="horizontal"
                                 defaultSelectedKeys={[window.location.pathname]}
                                 items={items}
-                                style={{ justifyContent: 'right', minWidth: '0px', flex: "auto", marginRight: '10%' }}
+                                style={{ justifyContent: 'right', minWidth: '0px', flex: "auto", marginRight: '10%',
+                                fontSize: '16px' }}
                                 overflowedIndicator={<MenuOutlined />}
                                 onClick={({ key }) => window.location.replace(key)}
                             />
@@ -102,7 +103,7 @@ export default function Main() {
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
-                    Version{process.env.REACT_APP_VERSION} Copyright @2023 Byvidé.com
+                    Version{process.env.REACT_APP_VERSION} <br/> Copyright @2023 Byvidé.com
                     <BackTop />
                 </Footer>
             </Layout>

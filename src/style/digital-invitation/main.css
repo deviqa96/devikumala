@@ -23,6 +23,7 @@
   background-size: cover;
   background-position: center;
   color: white;
+  user-select: none;
 }
 
 .center {

@@ -1,6 +1,6 @@
 import { Button, Col, Image, Row } from 'antd'
 import React, { Fragment, useEffect, useState } from 'react'
-import { useWindowSize } from '../Util'
+import { useWindowSize } from '../routes/Component/Util'
 import { InstagramOutlined, FacebookOutlined } from '@ant-design/icons'
 require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/gallery.css')

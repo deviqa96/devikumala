@@ -31,8 +31,8 @@ export default function Contact() {
     return (
         <Fragment>
             <Row gutter={20} style={{ margin: '20px' }}>
-                <Col xxl={6} xl={6} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#f2f2f2', padding: '20px' }}></Col>
-                <Col xxl={6} xl={6} lg={10} md={12} sm={24} xs={24} style={{ backgroundColor: '#f2f2f2', padding: '20px' }}>
+                <Col xxl={6} xl={4} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#f2f2f2', padding: '20px', borderRadius: '10% 0 0 10%' }}></Col>
+                <Col xxl={6} xl={8} lg={10} md={12} sm={24} xs={24} style={{ backgroundColor: '#f2f2f2', padding: '20px', wordBreak: 'break-all' }}>
                     <List
                         itemLayout="horizontal"
                         dataSource={contactData}
@@ -40,7 +40,7 @@ export default function Contact() {
                             <List.Item>
                                 <List.Item.Meta
                                     avatar={item.avatar}
-                                    title={<a href={item.link} target='_blank'>{item.title}</a>}
+                                    title={<a href={item.link} style={{ fontSize: '16px' }} target='_blank'>{item.title}</a>}
                                 />
                             </List.Item>
                         )}
@@ -50,13 +50,13 @@ export default function Contact() {
                     <p>
                         Sekedar ngobrol, minta bantuan atau apapun lewat email, klik tombol dibawah ya.
                     </p>
-                    <Button style={{ backgroundColor: '#f2f2f2' }}>
+                    <Button style={{ backgroundColor: '#f2f2f2', border: 'none', borderRadius: '5px' }}>
                         <a href='https://mail.google.com/mail/?view=cm&fs=1&to=devikumala.byvide@gmail.com&su=Ngobrol dengan Devi&body=Halo Devi, Byvidé.com. ...' target='_blank'>
                             Kirim
                         </a>
                     </Button>
                 </Col>
-                <Col xxl={6} xl={4} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#ffb8b1', padding: '20px' }}></Col>
+                <Col xxl={6} xl={4} lg={2} md={0} sm={0} xs={0} style={{ backgroundColor: '#ffb8b1', padding: '20px', borderRadius: '0 10% 10% 0' }}></Col>
             </Row>
 
         </Fragment>

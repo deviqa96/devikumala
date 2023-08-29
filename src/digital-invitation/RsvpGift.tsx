@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Row, Col, Button, Image, Tooltip, Card } from 'antd'
 import { CopyOutlined } from '@ant-design/icons'
-import { useWindowSize } from '../Util'
+import { useWindowSize } from '../routes/Component/Util'
 import copy from 'copy-to-clipboard'
 
 require('../style/digital-invitation/main.css')
@@ -38,7 +38,7 @@ export default function RsvpGift() {
               />
             </p>
             <div className="accountNumber">
-              0692290559{' '}
+              XXXXXXXX59{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">
                 <Button type="text" onClick={() => copy('XXXXXXXX59')} icon={<CopyOutlined />} />
               </Tooltip>
@@ -57,7 +57,7 @@ export default function RsvpGift() {
               />
             </p>
             <div className="accountNumber">
-              5271364114{' '}
+              XXXXXXXX14{' '}
               <Tooltip placement="top" title={'Copied to clipboard'} trigger="click">
                 <Button type="text" onClick={() => copy('XXXXXXXX14')} icon={<CopyOutlined />} />
               </Tooltip>

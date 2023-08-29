@@ -41,6 +41,20 @@
     border-bottom: none !important;
 }
 
+.overwriteAntdStyle{
+    font-size: 16px;
+}
+
+.overwriteAntdStyle .ant-tag{
+    font-size: 14px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.overwriteAntdStyle .ant-tag a{
+    color:black; 
+}
 
 .menuCollapse {
     position: absolute;

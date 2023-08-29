@@ -5,7 +5,7 @@ export default function Blog() {
 
     return (
         <Fragment>
-            <Row gutter={20} justify="space-evenly" style={{ marginTop: '10vh', marginLeft: '10%', marginRight: '10%' }}>
+            <Row gutter={20} justify="space-evenly" style={{ marginTop: '20px' }}>
                 <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
                     <Card className='homecard' style={{ backgroundColor: '#ffb8b1' }}>
                         <Image
@@ -19,10 +19,8 @@ export default function Blog() {
                         <a href='/blogs/karir' style={{ color: 'black' }}>Karir</a>
                     </h3>
                     <p>
-                        Saya memulai karir sebagai Software Engineer sejak lulus kuliah pada 2018. Spesialisasi saya di bidang Website Development
-                        Saya juga berpengalaman sebagai Full Stack Developer ( Front end developer, Back end developer dan Data analyst).
-                        Project terbaru yang saat saya kerjakan saat ini adalah membuat Data Visualization yang effective dalam sebuah website Dashboard.
-                        Untuk melihat skill bersertifikat saya silakan kunjungi profil <a href='https://www.linkedin.com/in/devi-kumala-b0459010b/' target='_blank'>LinkedIn</a> saya.
+                        Saya adalah full time Software Engineer sejak 2018 dan berspesialisai di bidang Website Development.
+                        Lihat profil dan sertifikat saya di <a href='https://www.linkedin.com/in/devi-kumala-b0459010b/' target='_blank'>LinkedIn</a>.
                     </p>
                 </Col>
                 <Col xxl={8} xl={8} lg={8} md={8} sm={24} xs={24} style={{ marginBottom: '10vh' }}>
@@ -38,10 +36,7 @@ export default function Blog() {
                         <a href='/blogs/pernikahan' style={{ color: 'black' }}>Pernikahan</a>
                     </h3>
                     <p>
-                        Menikah adalah moment terbesar yang ada pada hidup saya, saya sangat bersemangat dan gembira.
-                        Bagaimana pun juga pernikahan membutuhkan banyak dana dan tenaga. Perencanaan keuangan untuk menikah sejak awal kerja sangat diperlukan.
-                        Ini adalah awal dimana Budgeting (mengatur anggaran) menjadi passion saya.
-                        Saya pernah membuat
+                        Salah satu momen besar dalam hidup banyak orang. Rencanakan dengan matang: 
                         <a href='/blogs/pernikahan/'> Budget untuk sangjit</a>,
                         <a href='/blogs/pernikahan/'> Budget untuk pernikahan</a>,
                         <a href='/blogs/pernikahan/'> Budget untuk rumah pengantin baru</a>,
@@ -62,9 +57,8 @@ export default function Blog() {
                         <a href='/blogs/ibu-dan-bayi/' style={{ color: 'black' }}>Ibu & Bayi</a>
                     </h3>
                     <p>
-                        Setelah menikah, tidak lama kemudian saya hamil. Masa hamil dan menjadi ibu adalah tantangan besar untuk saya. 
-                        Tetapi karena dukungan suami dan keluarga, hamil menjadi pengalaman indah yang tak terlupakan. 
-                        Saya sangat bersemangat saat mempersiapkan <a href=''>Daftar barang kehamilan</a>, <a href=''>Daftar barang bayi newborn</a>, dan <a href=''>Souvenir bayi satu bulan</a>.
+                        Masa hamil dan menjadi ibu adalah pengalaman yang tak terlupakan. 
+                        Siapkan kehadiran bayi dengan menyusun <a href=''>Daftar barang kehamilan</a>, <a href=''>Daftar barang bayi newborn</a>, dan <a href=''>Souvenir bayi satu bulan</a>.
 
                     </p>
                 </Col>

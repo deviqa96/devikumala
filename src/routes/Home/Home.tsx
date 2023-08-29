@@ -33,7 +33,7 @@ export default function Home() {
                 </Fade>
             </section>
 
-            <section id="contact" className="homeSection">
+            <section id="contact" >
                 <Fade bottom>
                     <h2 className="homeSectionTitle">Ngobrol Yuk</h2>
                 </Fade>

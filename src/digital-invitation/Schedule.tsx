@@ -2,7 +2,7 @@ import React, { Fragment, useRef, useState } from 'react'
 import { Row, Col, Button, Card, Image } from 'antd'
 import { EnvironmentOutlined } from '@ant-design/icons'
 import { useSpring, animated, useTransition } from '@react-spring/web'
-import { useIntersectionObserver } from '../Util'
+import { useIntersectionObserver } from '../routes/Component/Util'
 require('../style/digital-invitation/main.css')
 require('../style/digital-invitation/schedule.css')
 
