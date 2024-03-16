@@ -72,7 +72,6 @@ export function getCategoryTitle(cat:string) {
     'ibu-dan-bayi': "Ibu & Bayi",
     hampers: "Hampers",
     'budget-planner' : "Budget Planner",
-    'digital-invitation' : "Digital Invitation",
     'graphic-design' : "Graphic Design",
     'template' : "Template"
   }

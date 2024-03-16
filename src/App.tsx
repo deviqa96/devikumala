@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import ExternalLinks from './digital-invitation/ExternalLinks'
-import Invitation from './digital-invitation/Invitation'
 import Main from './routes/Main'
 import Home from './routes/Home/Home'
 import About from './routes/About'
@@ -32,9 +30,6 @@ export default function App() {
             <Route path="/kontak" element={<Contact />} />
             <Route element={<Page404/>} />
           </Route>
-          <Route path="/digital-invitation" element={<Invitation />} />
-          <Route path="/digital-invitation/:guestName" element={<Invitation />} />
-          <Route path="/digital-invitation/links" element={<ExternalLinks />} />
           <Route element={<Page404/>} />
         </Routes>
       </Router>
